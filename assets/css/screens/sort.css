@@ -1,0 +1,124 @@
+html, body, main {
+  height: 100%;
+}
+
+main {
+  display: flex;
+}
+main section {
+  width: 100%;
+}
+main section .listHeader {
+  display: flex;
+  font-size: 15px;
+  height: 40px;
+}
+main section .listHeader .liHeader {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid lightgray;
+}
+main section .listHeader .liHeader:nth-child(n+1) {
+  margin-left: -1px;
+}
+main section .listHeader .liHeader__number {
+  width: 10.4%;
+}
+main section .listHeader .liHeader__player {
+  width: 20.8%;
+}
+main section .listHeader .liHeader__age {
+  width: 5.2%;
+}
+main section .listHeader .liHeader__flag {
+  width: 10.4%;
+}
+main section .listHeader .liHeader__height {
+  width: 10.4%;
+}
+main section .listHeader .liHeader__foot {
+  width: 5.2%;
+}
+main section .listHeader .liHeader__joined {
+  width: 10.4%;
+}
+main section .listHeader .liHeader__signed {
+  width: 11%;
+}
+main section .listHeader .liHeader__contract {
+  width: 10.4%;
+}
+main section .listHeader .liHeader__value {
+  width: 7%;
+}
+main section .player {
+  display: flex;
+  width: 100%;
+  height: 50px;
+}
+main section .player .player__data {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+  border: 1px solid lightgray;
+}
+main section .player .player__data:nth-child(n+1) {
+  margin-left: -1px;
+}
+main section .player .player__number {
+  width: 10.4%;
+}
+main section .player .player__name_img_pos_container {
+  width: 20.8%;
+  justify-content: flex-start;
+}
+main section .player .player__name_img_pos_container .player__img_container .player__img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+  margin-left: 20px;
+}
+main section .player .player__name_img_pos_container .player__name_position .player__name_container {
+  display: flex;
+}
+main section .player .player__name_img_pos_container .player__name_position .player__name_container .first {
+  margin-right: 3px;
+}
+main section .player .player__age {
+  width: 5.2%;
+}
+main section .player .player__flag_container {
+  width: 10.4%;
+  display: flex;
+  flex-direction: column;
+}
+main section .player .player__flag_container .player__flag {
+  width: 20px;
+}
+main section .player .player__flag_container .player__secondFlag {
+  width: 20px;
+  margin-top: 10px;
+}
+main section .player .player__height {
+  width: 10.4%;
+}
+main section .player .player__foot {
+  width: 5.2%;
+}
+main section .player .player__joined {
+  width: 10.4%;
+}
+main section .player .player__prevClub_container {
+  width: 11%;
+}
+main section .player .player__prevClub_container .player__prevClub {
+  height: 40px;
+}
+main section .player .player__contract {
+  width: 10.4%;
+}
+main section .player .player__value {
+  width: 7%;
+}/*# sourceMappingURL=sort.css.map */

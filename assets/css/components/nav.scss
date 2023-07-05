@@ -1,0 +1,31 @@
+@import '../variable';
+
+main{
+    nav{
+        color: #FFF;
+        background-color: $main-color;
+        width: 150px;
+        height: 100%;
+        ul{
+            height: 100%;
+            padding-top: 40px;
+            li{
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                margin-bottom: 10px;
+                cursor: pointer;
+                .button{
+                    width: 100%;
+                    border: 1px solid transparent;
+                    height: 30px;
+                    &:hover{
+                        border: 1px solid black;
+                        background-color: rgb(38, 53, 104);
+                    }
+                }
+            }
+        }
+    }
+}

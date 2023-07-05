@@ -1,0 +1,131 @@
+@import '../variable';
+
+html, body, main{
+    height: 100%;
+}
+
+main{
+    display: flex;
+    
+    section{
+        width: 100%;
+        .listHeader{
+            display: flex;
+            font-size: 15px;
+            height: 40px;
+            .liHeader{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 1px solid lightgray;
+                &:nth-child(n+1) {
+                    margin-left: -1px;
+                }
+            }
+            .liHeader__number{
+                width: 10.4%;
+            }
+            .liHeader__player{
+                width: 20.8%;
+            }
+            .liHeader__age{
+                width: 5.2%;
+            }
+            .liHeader__flag{
+                width: 10.4%;
+            }
+            .liHeader__height{
+                width: 10.4%;
+            }
+            .liHeader__foot{
+                width: 5.2%;
+            }
+            .liHeader__joined{
+                width: 10.4%;
+            }
+            .liHeader__signed{
+                width: 11%;
+            }
+            .liHeader__contract{
+                width: 10.4%;
+            }
+            .liHeader__value{
+                width: 7%;
+            }
+        }
+        .player{
+            display: flex;
+            width: 100%;
+            height: 50px;
+            .player__data{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                font-size: 12px;
+                border: 1px solid lightgray;
+                &:nth-child(n+1) {
+                    margin-left: -1px;
+                }
+            }
+            .player__number{
+                width: 10.4%;
+            }
+            .player__name_img_pos_container{
+                width: 20.8%;
+                justify-content:flex-start;
+                .player__img_container{
+                    .player__img{
+                        width: 40px;
+                        height: 40px;
+                        margin-right: 10px;
+                        margin-left: 20px;
+                    }
+                }
+                .player__name_position{
+                    .player__name_container{
+                        display: flex;
+                        .first{
+                            margin-right: 3px;
+                        }
+                    }
+                }
+            }
+            .player__age{
+                width: 5.2%;
+            }
+            .player__flag_container{
+                width: 10.4%;
+                display: flex;
+                flex-direction: column;
+                .player__flag{
+                    width: 20px;
+                }
+                .player__secondFlag{
+                    width: 20px;
+                    margin-top: 10px;
+                }
+            }
+            .player__height{
+                width: 10.4%;
+            }
+            .player__foot{
+                width: 5.2%;
+            }
+            .player__joined{
+                width: 10.4%;
+            }
+            .player__prevClub_container{
+                width: 11%;
+                .player__prevClub{
+                    height: 40px;
+                }
+            }
+            .player__contract{
+                width: 10.4%;
+            }
+            .player__value{
+                width: 7%;
+            }
+        }
+    }
+}

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>무관</title>
+</head>
+<body>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <header>
+        <img src="assets/img/Tottenham-logo.png" alt="">
+    </header>
+    <main>
+        <nav>
+            <ul>
+                <li>
+                    <p class="button sort__byPositionAsc">포지션 정렬</p>
+                    <p class="button sort__byPositionDesc">포지션 역순정렬</p>
+                </li>
+                <li>
+                    <p class="button sort__byNumberAsc">번호 오름차순</p>
+                    <p class="button sort__byNumberDesc">번호 내림차순</p>
+                </li>
+                <li>
+                    <p class="button sort__byAgeAsc">나이 오름차순</p>
+                    <p class="button sort__byAgeDesc">나이 내림차순</p>
+                </li>
+                <li>
+                    <select name="nat__select" class="nat__select" onchange="natChange(this.value);">
+                        <option value="france">프랑스</option>
+                        <option value="england">잉글랜드</option>
+                        <option value="italy">이탈리아</option>
+                        <option value="argentina">아르헨티나</option>
+                        <option value="colombia">콜롬비아</option>
+                        <option value="wales">웨일스</option>
+                        <option value="spain">스페인</option>
+                        <option value="brazil">브라질</option>
+                        <option value="denmark">덴마크</option>
+                        <option value="uruguay">우루과이</option>
+                        <option value="senegal">세네갈</option>
+                        <option value="mail">말리</option>
+                        <option value="croatia">크로아티아</option>
+                        <option value="korea">대한민국</option>
+                        <option value="sweden">스웨덴</option>
+                    </select>
+                </li>
+                <li>
+                    <p class="button sort__byHeightAsc">키 오름차순</p>
+                    <p class="button sort__byHeightDesc">키 내림차순</p>
+                </li>
+                <li>
+                    <p class="button sort__byFoot">주발로 정렬</p>
+                </li>
+                <li>
+                    <p class="button sort__bySignedAsc">입단 날짜 오름차순</p>
+                    <p class="button sort__bySignedDesc">입단 날짜 내림차순</p>
+                </li>
+                <li>
+                    <select name="club__select" class="club__select" onchange="clubChange(this.value);">
+                        <option value="lyon">리옹</option>
+                        <option value="southhampton">사우스햄튼</option>
+                        <option value="cagliari">칼리아리</option>
+                        <option value="tottenham">토트넘</option>
+                        <option value="atalanta">아탈란타</option>
+                        <option value="sporting">스포르팅</option>
+                        <option value="ajax">아약스</option>
+                        <option value="swansea">스완지</option>
+                        <option value="udinese">우디네세</option>
+                        <option value="realmadrid">레알 마드리드</option>
+                        <option value="barcelona">바르셀로나</option>
+                        <option value="middlesbrough">미들즈브러</option>
+                        <option value="juventus">유벤투스</option>
+                        <option value="brighton">브라이튼</option>
+                        <option value="metz">메츠</option>
+                        <option value="betis">레알 베티스</option>
+                        <option value="fulham">풀럼</option>
+                        <option value="inter">인터 밀란</option>
+                        <option value="leicester">레스터 시티</option>
+                        <option value="leverkusen">레버쿠젠</option>
+                        <option value="sevilla">세비야</option>
+                        <option value="everton">에버튼</option>
+                    </select>
+                </li>
+                <li>
+                    <p class="button sort__byContractAsc">계약 오름차순</p>
+                    <p class="button sort__byContractDesc">계약 내림차순</p>
+                </li>
+                <li>
+                    <p class="button sort__byValueAsc">가치 오름차순</p>
+                    <p class="button sort__byValueDesc">가치 내림차순</p>
+                </li>
+            </ul>
+        </nav>
+        <section>
+            <div class="player__container">
+                <ul class="listHeader">
+                    <li class="liHeader liHeader__number"><p>등번호</p></li>
+                    <li class="liHeader liHeader__player"><p>선수</p></li>
+                    <li class="liHeader liHeader__age"><p>나이</p></li>
+                    <li class="liHeader liHeader__flag"><p>국적</p></li>
+                    <li class="liHeader liHeader__height"><p>키</p></li>
+                    <li class="liHeader liHeader__foot"><p>주발</p></li>
+                    <li class="liHeader liHeader__joined"><p>입단 날짜</p></li>
+                    <li class="liHeader liHeader__signed"><p>이전 팀</p></li>
+                    <li class="liHeader liHeader__contract"><p>계약기간</p></li>
+                    <li class="liHeader liHeader__value"><p>시장 가치</p></li>
+                </ul>
+                <div class="player__sort">
+
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="assets/js/main.js"></script>
+</body>
+</html>
